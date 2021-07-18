@@ -7,10 +7,14 @@ pipeline {
          steps{
            bat "terraform init"
            bat "terraform plan"
-
-         }
-
-       }
+             }
+            }
+            
+           stage('terraform apply'){
+              steps{
+              bat "terraform apply"
+              }
+              }
 
    }
 
