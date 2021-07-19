@@ -2,6 +2,15 @@
   "Version": "2012-10-17",
   "Statement": [
     {
+      "Effect": "Allow",
+      "Action": [
+        "rds:DescribeDBInstances",
+        "rds:StopDBInstance",
+        "rds:StartDBInstance"
+      ],
+      "Resource": "*"
+    },
+    {
       "Sid": "Stmt1626679787622",
       "Action": "logs:*",
       "Effect": "Allow",
