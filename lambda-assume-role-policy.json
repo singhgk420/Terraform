@@ -2,10 +2,11 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "Stmt1626680801830",
-      "Action": "lambda:*",
       "Effect": "Allow",
-      "Resource": "*"
+      "Principal": {
+        "service": "lambda.*"
+      },
+      "Action": "sts:AssumeRole"
     }
   ]
 }
